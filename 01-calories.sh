@@ -17,9 +17,10 @@ while IFS= read -r line; do
             maxElf=$thisElf
             
             # uncomment below if you want to see maximum changing over time
-            echo "max elf $maxElf"
+            # echo "max elf $maxElf"
         fi
         thisElf=0
     fi
-
 done < 01-calories.txt
+
+echo $maxElf
